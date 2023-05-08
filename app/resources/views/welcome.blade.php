@@ -36,9 +36,9 @@
                 <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt class="text-base font-medium text-gray-900">Dodanie kursu waluty</dt>
                     <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                        <span class="inline-flex items-center mb-4 rounded-md bg-pink-50 px-4 py-2 text-sm font-medium text-pink-700 ring-1 ring-inset ring-blue-700/10">[POST]&nbsp;&nbsp;&nbsp;&nbsp;/api/add-rate</span>
+                        <span class="inline-flex items-center mb-4 rounded-md bg-pink-50 px-4 py-2 text-sm font-medium text-pink-700 ring-1 ring-inset ring-blue-700/10">[POST]&nbsp;&nbsp;&nbsp;&nbsp;/api/exchange-rates</span>
                         <br>
-                        <p class="text-sm mt-3 mb-2 font-medium text-gray-700">API key</p>
+                        <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Headers</p>
                         <span class="inline-flex items-center mb-4 rounded-md bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700 ring-1 ring-inset ring-blue-700/10">
                                 <code>
                                     Key: 'authorization'<br>
