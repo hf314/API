@@ -1,0 +1,46 @@
+version: "3.5"
+services:
+  php:
+    container_name: cv_php
+    image: cv_php
+    privileged: true
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./../app:/var/www
+      - ./volume:/mnt/volume
+      - ./php/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+    networks:
+      - cv
+
+  nginx:
+    image: nginx:alpine
+    container_name: cv_nginx
+    restart: unless-stopped
+    ports:
+      - 9001:80
+    volumes:
+      - ./../app:/var/www
+      - ./nginx/local:/etc/nginx/conf.d/
+    networks:
+      - cv
+
+  mysql:
+    image: mysql:8
+    container_name: cv_mysql
+    restart: unless-stopped
+    ports:
+      - 9002:3306
+    environment:
+      MYSQL_DATABASE: cv
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_PASSWORD: secret
+      MYSQL_USER: cv
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    networks:
+      - cv
+
+networks:
+  cv:
+    external: true
