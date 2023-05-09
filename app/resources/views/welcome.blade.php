@@ -33,7 +33,7 @@
                     <dt class="text-base font-medium text-gray-700">Lista kursów walut z danego dnia</dt>
                     <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                         <span class="inline-flex items-center rounded-md bg-green-50 px-4 py-2 text-sm font-medium text-green-700 ring-1 ring-inset ring-blue-700/10">read-only</span>
-                        <span class="inline-flex items-center rounded-md bg-green-50 px-4 py-2 text-sm font-medium text-green-700 ring-1 ring-inset ring-blue-700/10">[GET]&nbsp;&nbsp;&nbsp;&nbsp;/api/exchange-rates?date=2023-05-01</span>
+                        <span class="inline-flex items-center rounded-md bg-green-50 px-4 py-2 text-sm font-medium text-green-700 ring-1 ring-inset ring-blue-700/10">[GET]&nbsp;&nbsp;&nbsp;&nbsp;/api/exchange-rates?date=2000-01-01</span>
                         <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Headers</p>
                         <span class="inline-flex items-center mb-4 rounded-md bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700 ring-1 ring-inset ring-blue-700/10">
                                 <code>
@@ -47,7 +47,7 @@
                     <dt class="text-base font-medium text-gray-700">Pobranie kursu dla wybranej waluty z danego dnia</dt>
                     <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                         <span class="inline-flex items-center rounded-md bg-green-50 px-4 py-2 text-sm font-medium text-green-700 ring-1 ring-inset ring-blue-700/10">read-only</span>
-                        <span class="inline-flex items-center rounded-md bg-green-50 px-4 py-2 text-sm font-medium text-green-700 ring-1 ring-inset ring-blue-700/10">[GET]&nbsp;&nbsp;&nbsp;&nbsp;/api/exchange-rates/currency?date=2023-05-01&amp;currency=usd</span>
+                        <span class="inline-flex items-center rounded-md bg-green-50 px-4 py-2 text-sm font-medium text-green-700 ring-1 ring-inset ring-blue-700/10">[GET]&nbsp;&nbsp;&nbsp;&nbsp;/api/exchange-rates/currency?2000-01-01&amp;currency=usd</span>
                         <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Headers</p>
                         <span class="inline-flex items-center mb-4 rounded-md bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700 ring-1 ring-inset ring-blue-700/10">
                                 <code>
