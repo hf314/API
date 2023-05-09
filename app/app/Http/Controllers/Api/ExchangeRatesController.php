@@ -31,7 +31,6 @@ class ExchangeRatesController extends Controller
     }
 
 
-
     public function SingleCurrencyRateOnDate(Request $request) {
         $validator = Validator::make($request->all(), [
             'date' => 'required|date_format:Y-m-d',
@@ -67,7 +66,7 @@ class ExchangeRatesController extends Controller
 
         $rate = Models\ExchangeRate::where('date', $request->date)->where('currency', strtoupper($request->currency))->first();
 
-        if ($rate) { return response()->json("Duplicate entry 'currency' & 'date'"); }
+        if ($rate) { return response()->json(["Duplicate entry [currency] & [date]", "Exchange rate can only be recorded once a day"]); }
 
         $newRate = new Models\ExchangeRate();
         $newRate->date = $request->date;

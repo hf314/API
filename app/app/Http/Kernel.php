@@ -2,6 +2,9 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\CheckApiMiddleware;
+use App\Http\Middleware\ReadOnlyMiddleware;
+use App\Http\Middleware\ReadWriteMiddleware;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -66,7 +69,7 @@ class Kernel extends HttpKernel
     ];
 
     protected $routeMiddleware = [
-        'CheckApiKey' => \App\Http\Middleware\CheckApiKey::class,
-        // другие middleware
+        'read-only' => ReadOnlyMiddleware::class,
+        'read-write' => ReadWriteMiddleware::class
     ];
 }
