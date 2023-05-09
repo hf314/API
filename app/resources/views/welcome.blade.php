@@ -37,8 +37,8 @@
                         <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Headers</p>
                         <span class="inline-flex items-center mb-4 rounded-md bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700 ring-1 ring-inset ring-blue-700/10">
                                 <code>
-                                    <pre>Key: 'authorization'</pre>
-                                    <pre>Value: 'Your API key'</pre>
+                                    <pre>Header name: 'authorization'</pre>
+                                    <pre>Header value: 'Your API key'</pre>
                                 </code>
                             </span> <br>
                     </dd>
@@ -51,8 +51,8 @@
                         <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Headers</p>
                         <span class="inline-flex items-center mb-4 rounded-md bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700 ring-1 ring-inset ring-blue-700/10">
                                 <code>
-                                    <pre>Key: 'authorization'</pre>
-                                    <pre>Value: 'Your API key'</pre>
+                                    <pre>Header name: 'authorization'</pre>
+                                    <pre>Header value: 'Your API key'</pre>
                                 </code>
                             </span> <br>
                     </dd>
@@ -66,16 +66,14 @@
                         <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Headers</p>
                         <span class="inline-flex items-center mb-4 rounded-md bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700 ring-1 ring-inset ring-blue-700/10">
                                 <code>
-                                    <pre>Key: 'authorization'</pre>
-                                    <pre>Value: 'Your API key'</pre>
+                                    <pre>Header name: 'authorization'</pre>
+                                    <pre>Header value: 'Your API key'</pre>
                                 </code>
                             </span> <br>
                         <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Body</p>
                         <span class="inline-flex items-center mb-4 rounded-md bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700 ring-1 ring-inset ring-blue-700/10">
                                 <code>
-                                    {"currency": "usd"} <br>
-                                    {"amount": "4.15"} <br>
-                                    {"date": "y-m-d"} <br>
+                                    {"currency": "usd", "amount": "4.15", "date": "y-m-d"} <br>
                                 </code>
                             </span> <br>
                     </dd>
