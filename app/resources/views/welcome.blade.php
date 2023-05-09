@@ -20,8 +20,8 @@
                     <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
 {{--                        <span class="inline-flex items-center rounded-md bg-pink-50 px-4 py-2 text-sm font-medium text-pink-700 ring-1 ring-inset ring-blue-700/10">[POST]</span>--}}
                         <span class="inline-flex items-center rounded-md bg-pink-50 px-4 py-2 text-sm font-medium text-pink-700 ring-1 ring-inset ring-blue-700/10">[POST]&nbsp;&nbsp;&nbsp;&nbsp;/api/generate-key</span>
-                        <br> <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Use these permissions <br> &bull; read-only <br> &bull; read-write</p>
-                        <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Headers</p>
+                        <br> <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Use these permissions <br> &bull; observer <br> &bull; editor</p>
+                        <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Body</p>
                         <span class="inline-flex items-center mb-4 rounded-md bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700 ring-1 ring-inset ring-blue-700/10">
                                 <code>
                                     'permissions' = '. . .' <br>
@@ -32,7 +32,7 @@
                 <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt class="text-base font-medium text-gray-700">Lista kursów walut z danego dnia</dt>
                     <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                        <span class="inline-flex items-center rounded-md bg-green-50 px-4 py-2 text-sm font-medium text-green-700 ring-1 ring-inset ring-blue-700/10">read-only</span>
+                        <span class="inline-flex items-center rounded-md bg-green-50 px-4 py-2 text-sm font-medium text-green-700 ring-1 ring-inset ring-blue-700/10">observer</span>
                         <span class="inline-flex items-center rounded-md bg-green-50 px-4 py-2 text-sm font-medium text-green-700 ring-1 ring-inset ring-blue-700/10">[GET]&nbsp;&nbsp;&nbsp;&nbsp;/api/exchange-rates?date=2000-01-01</span>
                         <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Headers</p>
                         <span class="inline-flex items-center mb-4 rounded-md bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700 ring-1 ring-inset ring-blue-700/10">
@@ -46,7 +46,7 @@
                 <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt class="text-base font-medium text-gray-700">Pobranie kursu dla wybranej waluty z danego dnia</dt>
                     <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                        <span class="inline-flex items-center rounded-md bg-green-50 px-4 py-2 text-sm font-medium text-green-700 ring-1 ring-inset ring-blue-700/10">read-only</span>
+                        <span class="inline-flex items-center rounded-md bg-green-50 px-4 py-2 text-sm font-medium text-green-700 ring-1 ring-inset ring-blue-700/10">observer</span>
                         <span class="inline-flex items-center rounded-md bg-green-50 px-4 py-2 text-sm font-medium text-green-700 ring-1 ring-inset ring-blue-700/10">[GET]&nbsp;&nbsp;&nbsp;&nbsp;/api/exchange-rates/currency?2000-01-01&amp;currency=usd</span>
                         <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Headers</p>
                         <span class="inline-flex items-center mb-4 rounded-md bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700 ring-1 ring-inset ring-blue-700/10">
@@ -60,7 +60,7 @@
                 <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt class="text-base font-medium text-gray-700">Dodanie kursu waluty</dt>
                     <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                        <span class="inline-flex items-center mb-4 rounded-md bg-pink-50 px-4 py-2 text-sm font-medium text-pink-700 ring-1 ring-inset ring-blue-700/10">read-write</span>
+                        <span class="inline-flex items-center mb-4 rounded-md bg-pink-50 px-4 py-2 text-sm font-medium text-pink-700 ring-1 ring-inset ring-blue-700/10">editor</span>
                         <span class="inline-flex items-center mb-4 rounded-md bg-pink-50 px-4 py-2 text-sm font-medium text-pink-700 ring-1 ring-inset ring-blue-700/10">[POST]&nbsp;&nbsp;&nbsp;&nbsp;/api/exchange-rates</span>
                         <br>
                         <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Headers</p>
@@ -70,7 +70,7 @@
                                     Value: 'Your API key'<br>
                                 </code>
                             </span> <br>
-                        <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Query</p>
+                        <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Body</p>
                         <span class="inline-flex items-center mb-4 rounded-md bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700 ring-1 ring-inset ring-blue-700/10">
                                 <code>
                                     'currency' = 'usd' <br>

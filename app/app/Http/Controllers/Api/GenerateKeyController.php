@@ -12,7 +12,7 @@ class GenerateKeyController extends Controller
 {
     public function NewKey(Request $request) {
         $validator = Validator::make($request->all(), [
-            'permissions' => 'required|in:read-only,read-write',
+            'permissions' => 'required|in:observer,editor',
         ]);
 
         if ($validator->fails()) {
@@ -25,7 +25,6 @@ class GenerateKeyController extends Controller
         $key->key = $apiKey;
         $key->permissions = $request->permissions;
         $key->save();
-
 
         return response()->json([$apiKey, $request->permissions]);
     }

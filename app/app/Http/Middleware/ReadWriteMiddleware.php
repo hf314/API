@@ -16,7 +16,7 @@ class ReadWriteMiddleware
             return response()->json(['error' => 'Unauthorized'], 401);
         }
 
-        $key = Key::where('key', $apiKey)->where('permissions', 'read-write')->first();
+        $key = Key::where('key', $apiKey)->where('permissions', 'editor')->first();
         if (!$key) {
             return response()->json(['message' => 'Access denied'], 403);
         }

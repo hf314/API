@@ -69,7 +69,7 @@ class Kernel extends HttpKernel
     ];
 
     protected $routeMiddleware = [
-        'read-only' => ReadOnlyMiddleware::class,
-        'read-write' => ReadWriteMiddleware::class
+        'observer' => ReadOnlyMiddleware::class,
+        'editor' => ReadWriteMiddleware::class
     ];
 }
