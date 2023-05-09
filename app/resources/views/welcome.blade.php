@@ -7,7 +7,7 @@
     <title>Laravel</title>
 </head>
 <body class="antialiased">
-<div class="flex items-center justify-center h-screen">
+<div class="flex items-center justify-center mt-10 mb-10">
     <div class="overflow-hidden bg-white shadow sm:rounded-lg">
         <div class="px-4 py-6 sm:px-6">
             <h3 class="text-base font-semibold leading-7 text-gray-900">API Documentation</h3>
@@ -16,26 +16,51 @@
         <div class="border-t border-gray-100">
             <dl class="divide-y divide-gray-100">
                 <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                    <dt class="text-base font-medium text-gray-900">Generate API key</dt>
+                    <dt class="text-base font-medium text-gray-700">Generate API key</dt>
                     <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+{{--                        <span class="inline-flex items-center rounded-md bg-pink-50 px-4 py-2 text-sm font-medium text-pink-700 ring-1 ring-inset ring-blue-700/10">[POST]</span>--}}
                         <span class="inline-flex items-center rounded-md bg-pink-50 px-4 py-2 text-sm font-medium text-pink-700 ring-1 ring-inset ring-blue-700/10">[POST]&nbsp;&nbsp;&nbsp;&nbsp;/api/generate-key</span>
+                        <br> <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Use these permissions <br> &bull; read-only <br> &bull; read-write</p>
+                        <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Headers</p>
+                        <span class="inline-flex items-center mb-4 rounded-md bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700 ring-1 ring-inset ring-blue-700/10">
+                                <code>
+                                    'permissions' = '. . .' <br>
+                                </code>
+                            </span> <br>
                     </dd>
                 </div>
                 <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                    <dt class="text-base font-medium text-gray-900">Lista kursów walut z danego dnia</dt>
+                    <dt class="text-base font-medium text-gray-700">Lista kursów walut z danego dnia</dt>
                     <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                        <span class="inline-flex items-center rounded-md bg-green-50 px-4 py-2 text-sm font-medium text-green-700 ring-1 ring-inset ring-blue-700/10">read-only</span>
                         <span class="inline-flex items-center rounded-md bg-green-50 px-4 py-2 text-sm font-medium text-green-700 ring-1 ring-inset ring-blue-700/10">[GET]&nbsp;&nbsp;&nbsp;&nbsp;/api/exchange-rates?date=2023-05-01</span>
+                        <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Headers</p>
+                        <span class="inline-flex items-center mb-4 rounded-md bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700 ring-1 ring-inset ring-blue-700/10">
+                                <code>
+                                    Key: 'authorization'<br>
+                                    Value: 'Your API key'<br>
+                                </code>
+                            </span> <br>
                     </dd>
                 </div>
                 <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                    <dt class="text-base font-medium text-gray-900">Pobranie kursu dla wybranej waluty z danego dnia</dt>
+                    <dt class="text-base font-medium text-gray-700">Pobranie kursu dla wybranej waluty z danego dnia</dt>
                     <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                        <span class="inline-flex items-center rounded-md bg-green-50 px-4 py-2 text-sm font-medium text-green-700 ring-1 ring-inset ring-blue-700/10">read-only</span>
                         <span class="inline-flex items-center rounded-md bg-green-50 px-4 py-2 text-sm font-medium text-green-700 ring-1 ring-inset ring-blue-700/10">[GET]&nbsp;&nbsp;&nbsp;&nbsp;/api/exchange-rates/currency?date=2023-05-01&amp;currency=usd</span>
+                        <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Headers</p>
+                        <span class="inline-flex items-center mb-4 rounded-md bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700 ring-1 ring-inset ring-blue-700/10">
+                                <code>
+                                    Key: 'authorization'<br>
+                                    Value: 'Your API key'<br>
+                                </code>
+                            </span> <br>
                     </dd>
                 </div>
                 <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                    <dt class="text-base font-medium text-gray-900">Dodanie kursu waluty</dt>
+                    <dt class="text-base font-medium text-gray-700">Dodanie kursu waluty</dt>
                     <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                        <span class="inline-flex items-center mb-4 rounded-md bg-pink-50 px-4 py-2 text-sm font-medium text-pink-700 ring-1 ring-inset ring-blue-700/10">read-write</span>
                         <span class="inline-flex items-center mb-4 rounded-md bg-pink-50 px-4 py-2 text-sm font-medium text-pink-700 ring-1 ring-inset ring-blue-700/10">[POST]&nbsp;&nbsp;&nbsp;&nbsp;/api/exchange-rates</span>
                         <br>
                         <p class="text-sm mt-3 mb-2 font-medium text-gray-700">Headers</p>
